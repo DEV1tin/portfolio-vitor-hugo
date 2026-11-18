@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vitor Hugo Lima — AI Builder | Produto, Dados & Sistemas Multiagentes</title>
+  <meta name="description" content="Portfólio de Vitor Hugo Bonfim de Lima — AI Builder, Cofundador da Dexos, ex-Arco Educação, Mottu e Ambev. Projetos práticos com Gemini API, sistemas multiagentes, automações em Python e produtos web." />
+  <link rel="canonical" href="https://dev1tin.github.io/" />
+
+  <!-- Dados Estruturados para Leitura Otimizada por LLMs e Motores de Busca -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vitor Hugo Bonfim de Lima",
+    "url": "https://dev1tin.github.io/",
+    "email": "mailto:vhlima1998@gmail.com",
+    "jobTitle": "AI Builder | Produto, Operações & Sistemas com IA",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Curitiba",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidade Federal do Paraná (UFPR)"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/vitorhugolima/",
+      "https://github.com/DEV1tin"
+    ],
+    "knowsAbout": [
+      "Generative AI",
+      "Prompt Engineering",
+      "Multi-Agent Systems",
+      "Gemini API",
+      "Python Automation",
+      "Business Intelligence",
+      "Growth & Operations"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --surface: #121826;
+      --surface-hover: #182032;
+      --border: #232d42;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.12);
+      --green: #34d399;
+      --green-soft: rgba(52, 211, 153, 0.12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 36px;
+      margin-bottom: 44px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--green);
+      background: var(--green-soft);
+      border: 1px solid rgba(52, 211, 153, 0.28);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.12rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .summary {
+      color: var(--muted);
+      max-width: 760px;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    .links-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 16px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .btn:hover {
+      background: var(--surface-hover);
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--accent-soft);
+      border-color: rgba(56, 189, 248, 0.4);
+      color: var(--accent);
+    }
+
+    section { margin-bottom: 48px; }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .card:hover {
+      border-color: #334155;
+      transform: translateY(-2px);
+    }
+
+    .card-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .card h3 {
+      font-size: 1.12rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.93rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .card ul {
+      padding-left: 18px;
+      margin-bottom: 16px;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+    }
+
+    .card li { margin-bottom: 6px; }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 3px 9px;
+      border-radius: 6px;
+      background: rgba(148, 163, 184, 0.1);
+      color: #cbd5e1;
+      border: 1px solid rgba(148, 163, 184, 0.16);
+    }
+
+    .card-footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    .exp-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .exp-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+    }
+
+    .exp-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .exp-title { font-weight: 600; font-size: 1rem; }
+    .exp-period { font-size: 0.85rem; color: var(--muted); }
+    .exp-desc { font-size: 0.92rem; color: var(--muted); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">AI Builder · Portfólio v0.1</span>
+      <h1>Vitor Hugo Bonfim de Lima</h1>
+      <p class="subtitle">AI Builder | Automação de Processos, Sistemas Multiagentes &amp; Produtos com IA Generativa</p>
+      <p class="summary">
+        Profissional com base sólida em Negócios, Dados/BI e Expansão Operacional (Arco Educação, Mottu, Ambev) aplicando
+        IA Generativa, engenharia de prompts e prototipagem rápida para resolver problemas reais de negócio de ponta a ponta.
+        Graduando em Engenharia Civil pela UFPR (conclusão prevista: Dez/2026) · Curitiba, PR.
+      </p>
+      <nav class="links-row" aria-label="Links principais">
+        <a class="btn btn-primary" href="https://github.com/DEV1tin" target="_blank" rel="noopener">GitHub (DEV1tin)</a>
+        <a class="btn" href="https://www.linkedin.com/in/vitorhugolima/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="mailto:vhlima1998@gmail.com">vhlima1998@gmail.com</a>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="projetos-ia">
+        <h2 id="projetos-ia">Projetos &amp; Cases Práticos em IA, Produto e Automação</h2>
+        <div class="grid">
+          <article class="card">
+            <div>
+              <div class="card-tag">Produto PWA + Gemini API</div>
+              <h3>Blu. — Copiloto Terapêutico &amp; Dosimetria</h3>
+              <p>
+                Aplicação web mobile-first para acompanhamento diário de sono, dosimetria medicamentosa e auto-reflexão assistida por IA.
+              </p>
+              <ul>
+                <li><strong>Prompt em 2 camadas:</strong> diretrizes clínicas fixas + orientações dinâmicas com saída JSON estruturada.</li>
+                <li><strong>Resiliência:</strong> cascata multi-modelo Gemini com timeout de 4.500 ms e fallback determinístico.</li>
+                <li><strong>UX de baixo atrito:</strong> entrada por voz em PT-BR (Web Speech API) e Firestore com fallback offline.</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Next.js 16</span>
+                <span class="tag">React 19</span>
+                <span class="tag">Gemini REST API</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">TypeScript</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://bluapp-ebon.vercel.app" target="_blank" rel="noopener">Demo ao vivo &rarr;</a>
+              <a href="https://github.com/DEV1tin/blu" target="_blank" rel="noopener">Repositório GitHub &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <div class="card-tag">Sistemas Multiagentes &amp; Fomento IA/ML</div>
+              <h3>Dexos — Arquitetura Multiagente &amp; Mission Control</h3>
+              <p>
+                Construtech aprovada na Fase 1 do Programa Centelha 3 PR (temática IA &amp; ML, nota 4,635), estruturada sobre operação assistida por IA.
+              </p>
+              <ul>
+                <li><strong>Diretoria Multiagente:</strong> 4 agentes especializados (CAO, CMOs, CTO) em Obsidian + Google Antigravity com roteamento Pro/Flash e Human-in-the-Loop.</li>
+                <li><strong>Mission Control:</strong> painel local em Python (HTTPServer, pandas, openpyxl) sincronizado com funis B2B/B2P e balanceamento operacional.</li>
+                <li><strong>Pesquisa Sintética:</strong> simulação com 100 personas sintéticas para otimizar LP bilíngue em produção.</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Multiagentes</span>
+                <span class="tag">Python</span>
+                <span class="tag">Obsidian</span>
+                <span class="tag">Apps Script</span>
+                <span class="tag">Centelha 3 PR</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/DEV1tin/landing-parceiros" target="_blank" rel="noopener">LP Parceiros (GitHub) &rarr;</a>
+              <a href="https://github.com/DEV1tin/dexos-web" target="_blank" rel="noopener">Dexos Web &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <div class="card-tag">Growth, Operações &amp; BI (0 &rarr; 1.000)</div>
+              <h3>Mottu Curitiba — Expansão de Filial &amp; BI</h3>
+              <p>
+                Integração ao trio fundador responsável por tirar a filial de Curitiba do zero até mais de 1.000 motocicletas na frota ativa em 6 meses.
+              </p>
+              <ul>
+                <li><strong>Go-To-Market de Guerrilha:</strong> desenho e execução de aquisição local para destravar o flywheel orgânico de indicação.</li>
+                <li><strong>BI de Expansão:</strong> criação de indicadores próprios de tração inicial (0 &rarr; 1.000), replicados para novas praças no Brasil.</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Growth</span>
+                <span class="tag">Operações</span>
+                <span class="tag">BI</span>
+                <span class="tag">Last Mile</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://www.linkedin.com/in/vitorhugolima/" target="_blank" rel="noopener">Detalhes no LinkedIn &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <div class="card-tag">Knowledge Engineering &amp; Automação</div>
+              <h3>Plataformas Web &amp; Pipelines Automatizados</h3>
+              <p>
+                Conjunto de aplicações interativas e scripts de automação documental construídos com apoio iterativo de LLMs (Gemini e Claude).
+              </p>
+              <ul>
+                <li><strong>Concreto I &amp; Análise Estrutural:</strong> Web apps interativos publicados no GitHub Pages com gráficos SVG em JS, Python/NumPy e automação Word COM/MathML.</li>
+                <li><strong>Pipelines PDF:</strong> geração automatizada via HTML/KaTeX &rarr; Chrome Headless com validação visual e curadoria para NotebookLM.</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">NumPy</span>
+                <span class="tag">Chrome Headless</span>
+                <span class="tag">GitHub Pages</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://dev1tin.github.io/concreto-1/" target="_blank" rel="noopener">Concreto I ao vivo &rarr;</a>
+              <a href="https://github.com/DEV1tin/p2-saneamento-ii" target="_blank" rel="noopener">Saneamento II &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="trajetoria">
+        <h2 id="trajetoria">Trajetória Corporativa &amp; Negócios</h2>
+        <div class="exp-list">
+          <article class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Dexos Home Solutions — Cofundador (Produto, Operações &amp; Sistemas com IA)</span>
+              <span class="exp-period">08/2026 – Atual</span>
+            </div>
+            <p class="exp-desc">
+              Aprovação na Fase 1 do Centelha 3 PR (IA &amp; ML), arquitetura multiagente de gestão, painéis internos em Python e estruturação comercial/licitações.
+            </p>
+          </article>
+
+          <article class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Arco Educação — Analista de Planejamento e Performance I (GIN / Estratégia CLI)</span>
+              <span class="exp-period">10/2024 – 05/2026</span>
+            </div>
+            <p class="exp-desc">
+              Braço analítico das lideranças traduzindo dados de campo em estratégia e ritmo de execução de Customer Success; liderou tombamento completo de sistema e fechamento de metas com SQL, Looker, Metabase e Google Sheets.
+            </p>
+          </article>
+
+          <article class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Mottu — Business Partner (Growth &amp; Operações — Abertura Curitiba)</span>
+              <span class="exp-period">11/2021 – 06/2022</span>
+            </div>
+            <p class="exp-desc">
+              Trio fundador da filial Curitiba (+1.000 motos ativas em 6 meses), criação de BI de expansão e replicação do playbook para outras praças do país.
+            </p>
+          </article>
+
+          <article class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Cervejaria Ambev — Estágio em Business Intelligence &amp; Marketing Regional (Geo Sul)</span>
+              <span class="exp-period">01/2020 – 11/2021</span>
+            </div>
+            <p class="exp-desc">
+              Análise de market share em autosserviço com Power BI, Excel avançado e Scantech, além de ativações regionais e campanhas de branding.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Vitor Hugo Bonfim de Lima · Curitiba, PR · Engenharia Civil UFPR (Prev. Dez/2026)</span>
+      <span>Versão Alfa (v0.1) — Em expansão contínua</span>
+    </footer>
+  </div>
+</body>
+</html>
